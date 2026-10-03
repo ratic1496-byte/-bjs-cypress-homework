@@ -1,0 +1,16 @@
+{
+  "name": "cypress_tests",
+  "version": "1.0.0",
+  "description": "E2E tests with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test:desktop": "cypress run --browser chrome",
+    "test:desktop:headed": "cypress run --headed --browser chrome",
+    "test:mobile": "cypress run --config-file cypress.mobile.config.js",
+    "test:mobile:headed": "cypress run --headed --config-file cypress.mobile.config.js --browser chrome"
+  },
+  "devDependencies": {
+    "cypress": "^13.0.0"
+  }
+}
